@@ -25,9 +25,10 @@ An array is a group of like-typed variables that are referred to by a common nam
 - Every array type implements the interfaces Cloneable and java.io.Serializable.
 
 |Sl No|Name |Description|Files|Test|
-|---- |-----|-----------|-----|----|
-|1.|Reverse Array|Reverse an array in place without using new array|[ReverseArray.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/ReverseArray.java)|[ReverseArrayTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/ReverseArrayTest.java)|
-|2.|Anagram|Check if given two strings are anagrams or not|[Anagram.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/Anagram.java)|[AnagramTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/AnagramTest.java)|
+|---- |-----|-----------------------------------------------------------------------------------------------|-----|----|
+|1.|Reverse|The problem is that we want to reverse a T[] array in O(N) linear time complexity and we want the algorithm to be in-place as well!|[ReverseArray.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/ReverseArray.java)|[ReverseArrayTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/ReverseArrayTest.java)|
+|2.|Anagram|Construct an algorithm to check whether two words (or phrases) are anagrams or not!|[Anagram.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/Anagram.java)|[AnagramTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/AnagramTest.java)|
+|3.|Duplicate|The problem is that we want to find duplicates in a T[] one-dimensional array of integers in O(N) running time where the integer values are smaller than the length of the array!|[Duplicates.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/Duplicates.java)|[DuplicatesTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/DuplicatesTest.java)|
 
 
 ## 2.Linked List
