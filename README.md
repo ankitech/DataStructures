@@ -27,6 +27,7 @@ An array is a group of like-typed variables that are referred to by a common nam
 |Sl No|Name |Description|Files|Test|
 |---- |-----|-----------|-----|----|
 |1.|Reverse Array|Reverse an array in place without using new array|[ReverseArray.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/ReverseArray.java)|[ReverseArrayTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/ReverseArrayTest.java)|
+|2.|Anagram|Check if given two strings are anagrams or not|[Anagram.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/arrays/Anagram.java)|[AnagramTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/arrays/AnagramTest.java)|
 
 
 ## 2.Linked List
