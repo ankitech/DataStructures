@@ -58,7 +58,6 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
         while(actualNode != null){
             if(actualNode.getData().compareTo(data) == 0){
                 previousNode.setNextNode(actualNode.getNextNode());
-                actualNode = null;
                 return;
             }
             previousNode = actualNode;
@@ -67,21 +66,48 @@ public class LinkedList<T extends Comparable<T>> implements List<T> {
     }
 
     @Override
-    public void traverseList() {
+    public String traverseList() {
         if(this.root == null){
-            return;
+            return "";
         }
 
         Node<T> actualNode = this.root;
 
+        StringBuilder stringBuilder = new StringBuilder();
         while(actualNode != null){
             System.out.print(actualNode + " -> ");
+            stringBuilder.append(actualNode).append("-");
             actualNode = actualNode.getNextNode();
         }
+        return stringBuilder.toString();
     }
 
     @Override
     public int size() {
         return this.sizeOfList;
+    }
+
+    public Node<T> getMiddle(){
+        Node<T> fastPointer = this.root;
+        Node<T> slowPointer = this.root;
+        while(fastPointer.getNextNode() != null && fastPointer.getNextNode().getNextNode() != null){
+            fastPointer = fastPointer.getNextNode().getNextNode();
+            slowPointer = slowPointer.getNextNode();
+        }
+        return slowPointer;
+    }
+
+    public void reverseList(){
+        Node<T> current = this.root;
+        Node<T> next;
+        Node<T> prev = null;
+
+        while(current != null){
+            next = current.getNextNode();
+            current.setNextNode(prev);
+            prev=current;
+            current = next;
+        }
+        this.root = prev;
     }
 }

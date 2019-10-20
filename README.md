@@ -32,6 +32,11 @@ An array is a group of like-typed variables that are referred to by a common nam
 
 
 ## 2.Linked List
+|Sl No|Name |Description|Files|Test|
+|---- |-----|-----------------------------------------------------------------------------------------------|-----|----|
+|1.|Reverse|Construct an in-place algorithm to reverse a linked list!|[ReverseList.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/linkedlist/ReverseList.java)|[ReverseListTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/linkedlist/ReverseListTest.java)|
+|2.|Middle Item|Suppose we have a standard linked list.Construct an in-place (without extra memory) algorithm thats able to find the middle node !|[MiddleItem.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/linkedlist/MiddleItem.java)|[MiddleItemTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/linkedlist/MiddleItemTest.java)|
+
 
 ## 3.Stacks
 
