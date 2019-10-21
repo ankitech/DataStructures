@@ -39,8 +39,15 @@ An array is a group of like-typed variables that are referred to by a common nam
 
 
 ## 3.Stacks
+|Sl No|Name |Description|Files|Test|
+|---- |-----|-----------------------------------------------------------------------------------------------|-----|----|
+|1.|Maximum item|The aim is to design an algorithm that can return the maximum item of a stack in O(1) running time complexity. We can use O(N) extra memory!|[MaximumItem.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/stack/MaximumItem.java)|[MaximumItemTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/stack/MaximumItemTest.java)|
 
 ## 4.Queues
+|Sl No|Name |Description|Files|Test|
+|---- |-----|-----------------------------------------------------------------------------------------------|-----|----|
+|1.|Queue using stack|The aim is to design a queue abstract data type with the help of stacks.|[QueueUsingStack.java](https://github.com/ankitech/DataStructures/blob/master/src/main/java/com/ankitech/queue/QueueUsingStack.java)|[QueueUsingStackTest.java](https://github.com/ankitech/DataStructures/blob/master/src/test/java/com/ankitech/queue/QueueUsingStackTest.java)|
+
 
 ## 5.Binary Search Trees
 
