@@ -1,4 +1,4 @@
-package com.ankitech.bst;
+package com.ankitech.bst.implementation;
 
 public class Node<T> {
 

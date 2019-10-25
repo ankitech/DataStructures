@@ -1,4 +1,4 @@
-package com.ankitech.bst;
+package com.ankitech.bst.implementation;
 
 public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 
@@ -23,12 +23,36 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     @Override
+    public Node<T> getKSmallest(Node<T> node, int k) {
+        //n = number of nodes in left subtree +1
+        int n = treeSize(node.getLeftNode()) +1;
+
+        //this is case where root node si k smallest
+        if(n==k){
+            return node;
+        }
+
+        //if the number of nodes in left subtree > kth smallest item
+        //it means kth smallest item is in left subtree
+        if(n > k){
+            return getKSmallest(node.getLeftNode(), k);
+        }
+
+        return getKSmallest(node.getRightNode(), k-n);
+    }
+
+    @Override
     public T getMax(){
         if(root == null) {
             return null;
         }else {
             return getMax(root);
         }
+    }
+
+    @Override
+    public Node<T> getRoot() {
+        return this.root;
     }
 
     @Override
@@ -119,8 +143,30 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
             }
 
             //this is the node with two children
+            Node<T> tempNode = getPredecessor(node.getLeftNode());
+
+            node.setData(tempNode.getData());
+            node.setLeftNode(delete(node.getLeftNode(),tempNode.getData()));
         }
 
-        return null;
+        return node;
+    }
+
+    private Node<T> getPredecessor(Node<T> node) {
+
+        if(node.getRightNode() != null){
+            return getPredecessor(node.getRightNode());
+        }
+        return node;
+    }
+
+
+    private int treeSize(Node<T> node){
+
+        //this is base case
+        if(node == null) return 0;
+
+        //recursively sum up the size of left sub tree and right sub tree plus 1
+        return (treeSize(node.getLeftNode()) + treeSize(node.getRightNode()) + 1);
     }
 }

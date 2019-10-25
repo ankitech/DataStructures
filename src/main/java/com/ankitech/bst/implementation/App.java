@@ -1,4 +1,4 @@
-package com.ankitech.bst;
+package com.ankitech.bst.implementation;
 
 public class App {
 
@@ -12,6 +12,8 @@ public class App {
         bst.insert(-1);
         bst.insert(78);
         bst.insert(12);
+
+        bst.delete(10);
 
         bst.traversal();
 
